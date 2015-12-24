@@ -8,7 +8,7 @@ A typical use case for a mutex is when multiple asynchronous processes are fired
 
 ### file-appender.js
 
-Let you create an object to append to a certain file **one at a time**.
+Let you create an object to perform file appends **one at a time**.
 
 ```js
 import * as fs from "fs";
@@ -52,7 +52,7 @@ Creates an instance of Mutex (can not be called without **new**).
 let mutex = new Mutex();
 ```
 
-## Mutex.prototype.isLocked
+### Mutex.prototype.isLocked
 
 Returns if the mutex instance is (true) or not locked (false).
 
@@ -62,7 +62,7 @@ let unlock = await mutex.lock();
 console.log(mutex.isLocked()); // prints true
 ```
 
-## Mutex.prototype.lock: Promise
+### Mutex.prototype.lock: Promise
 
 - Waits until the mutex is unlocked and then locks it.
 - It returns an [ES2015 standard Promise](https://tc39.github.io/ecma262/#sec-promise-objects) (this allows the use of [async/await](http://tc39.github.io/ecmascript-asyncawait/)) which gets resolved once the mutex is unlocked.
