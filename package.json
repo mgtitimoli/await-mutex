@@ -2,7 +2,6 @@
   "name": "await-mutex",
   "version": "1.0.0",
   "description": "Promised based Mutex",
-  "private": true,
   "license": "Unlicense",
   "author": {
     "name": "Mauro Titimoli",
