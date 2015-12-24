@@ -1,6 +1,6 @@
 {
   "name": "await-mutex",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Promised based Mutex",
   "private": true,
   "license": "Unlicense",
