@@ -8,7 +8,7 @@ A typical use case for a mutex is when multiple asynchronous processes are fired
 
 ### file-appender.js
 
-Let's you create an object to append to a certain file **one at a time**.
+Let you create an object to append to a certain file **one at a time**.
 
 ```js
 import * as fs from "fs";
