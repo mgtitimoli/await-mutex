@@ -1,0 +1,13 @@
+# Temporary directories
+coverage
+
+# ES6 files (we are only uploading dist directory: ES5 files)
+src
+test
+examples
+
+# Configuration files
+.babelrc
+.envrc
+.eslintrc
+.gitignore

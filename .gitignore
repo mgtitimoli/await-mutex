@@ -1,0 +1,12 @@
+# Logs
+npm-debug.log*
+
+# Temporary files
+coverage
+
+# Transpiled files (ES5) directory
+dist
+
+# Dependency directory
+# https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
+node_modules

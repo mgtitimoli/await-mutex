@@ -1,0 +1,62 @@
+{
+  "name": "await-mutex",
+  "version": "0.1.0",
+  "description": "Promised based Mutex",
+  "private": true,
+  "license": "Unlicense",
+  "author": {
+    "name": "Mauro Titimoli",
+    "email": "mgtitimoli@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mgtitimoli/await-mutex"
+  },
+  "bugs": {
+    "url": "http://github.com/mgtitimoli/await-mutex/issues"
+  },
+  "keywords": [
+    "async",
+    "await",
+    "block",
+    "lock",
+    "locking",
+    "mutex",
+    "mutual-exclusion",
+    "parallel",
+    "semaphore",
+    "sync",
+    "synchronize",
+    "synchronization",
+    "unlock",
+    "unlocking"
+  ],
+  "main": "dist/mutex.js",
+  "scripts": {
+    "compile": "rm -f ./dist/*; babel ./src --out-dir ./dist",
+    "coverage": "babel-node ./node_modules/.bin/isparta cover _mocha",
+    "coverage-browse": "npm run coverage && x-www-browser ./coverage/lcov-report/index.html",
+    "dev": "mocha --reporter min --watch",
+    "lint": "eslint src/**/*.js test/**/*.js examples/**/*.js",
+    "prepublish": "npm test && npm run compile",
+    "test": "mocha"
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-eslint": "^4.1.6",
+    "babel-plugin-transform-runtime": "~6.3.0",
+    "babel-preset-es2015": "~6.3.0",
+    "babel-preset-stage-0": "~6.3.0",
+    "babel-register": "~6.3.0",
+    "babel-runtime": "~6.3.0",
+    "eslint": "^1.10.3",
+    "isparta": "^4.0.0",
+    "mocha": "^2.3.4",
+    "npm-check-updates": "^2.5.4"
+  }
+}
