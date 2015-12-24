@@ -1,10 +1,18 @@
 # 1.0.0 (2015-12-24)
 
-This is the first Release Candidate for AngularJS 1.5.0. Please try upgrading your applications and
-report any regressions or other issues you find as soon as possible.
+This is the first release of **await-mutex**, ENJOY!
 
 ## Features
 
+- Use **ES2015** standard promises allowing the use of [async/await](http://tc39.github.io/ecmascript-asyncawait/)
+- Minimal and highly cohesive API
+  + isLocked: Boolean
+  + lock: Promise
+
 ## Bug Fixes
 
+**None** (Let's wait some more versions to fill this)
+
 ## Breaking Changes
+
+**None** (We can't break any, since there is no other version older than this one)
