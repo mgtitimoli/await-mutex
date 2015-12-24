@@ -4,8 +4,6 @@ Promised based Mutex for cases where you need to synchronize sequentially the ac
 
 A typical use case for a mutex is when multiple asynchronous processes are fired and all of them have to execute another, **but the same**, asynchronous process as they arrive, one at a time, waiting for previous call (if any) to finish before calling it again.
 
-[![build status](https://secure.travis-ci.org/substack/node-mkdirp.png)](http://travis-ci.org/substack/node-mkdirp)
-
 ## Examples
 
 ### file-appender.js
