@@ -1,3 +1,17 @@
+# 1.0.1 (2015-12-24)
+
+## Features
+
+**None**
+
+## Bug Fixes
+
+- Fixed a documentation error
+
+## Breaking Changes
+
+**None**
+
 # 1.0.0 (2015-12-24)
 
 This is the first release of **await-mutex**, ENJOY!
