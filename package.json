@@ -57,6 +57,7 @@
     "eslint": "^1.10.3",
     "isparta": "^4.0.0",
     "mocha": "^2.3.4",
-    "npm-check-updates": "^2.5.4"
+    "npm-check-updates": "^2.5.4",
+    "pre-commit": "^1.1.2"
   }
 }
