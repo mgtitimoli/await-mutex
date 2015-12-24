@@ -12,7 +12,7 @@ Let you create an object to perform file appends **one at a time**.
 
 ```js
 import * as fs from "fs";
-import Mutex from "mutex";
+import Mutex from "await-mutex";
 
 export default class FileAppender {
 
@@ -41,7 +41,7 @@ export default class FileAppender {
 ## API
 
 ```js
-import Mutex from "mutex";
+import Mutex from "await-mutex";
 ```
 
 ### Mutex
