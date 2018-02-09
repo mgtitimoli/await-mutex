@@ -46,4 +46,17 @@ describe("Mutex", () => {
 
         await mutex.lock();
     });
+
+    it("should remain locked when one locker takes over from another", async () => {
+
+        let mutex = new Mutex();
+
+        let unlock = await mutex.lock();
+
+        setTimeout(unlock, 0);
+
+        await mutex.lock();
+
+        assert(mutex.isLocked());
+    });
 });
