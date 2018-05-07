@@ -3,23 +3,23 @@ export default class Mutex {
     constructor() {
 
         this._locking = Promise.resolve();
-        this._locked = 0;
+        this._locks = 0;
     }
 
     isLocked() {
 
-        return 0 !== this._locked;
+        return this._locks > 0;
     }
 
     lock() {
 
-        ++this._locked;
+        this._locks += 1;
 
         let unlockNext;
 
         let willLock = new Promise(resolve => unlockNext = resolve);
 
-        willLock.then(() => --this._locked);
+        willLock.then(() => this._locks -= 1);
 
         let willUnlock = this._locking.then(() => unlockNext);
 
