@@ -17,9 +17,11 @@ export default class Mutex {
 
         let unlockNext;
 
-        let willLock = new Promise(resolve => unlockNext = resolve);
-
-        willLock.then(() => this._locks -= 1);
+        let willLock = new Promise(resolve => unlockNext = () => {
+            this._locks -= 1;
+      
+            resolve();
+        });
 
         let willUnlock = this._locking.then(() => unlockNext);
 

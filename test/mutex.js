@@ -42,9 +42,9 @@ describe("Mutex", () => {
 
         let unlock = await mutex.lock();
 
-        setTimeout(unlock, 0);
+        unlock();
 
-        await mutex.lock();
+        assert(!mutex.isLocked());
     });
 
     it("isLocked should return true as long there is an ongoing lock", async () => {
